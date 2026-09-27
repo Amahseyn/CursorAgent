@@ -25,7 +25,7 @@ Then:
 ```json
 {
   "name": "my-pack",
-  "source": "plugins/my-pack",
+  "source": "./plugins/my-pack",
   "description": "Same description as plugin.json",
   "version": "0.1.0",
   "license": "MIT",
@@ -60,6 +60,10 @@ Include a fenced example with a BAD line and a GOOD line.
 ```
 
 - Prefer under 50 lines. The hard limit is 500. The validator warns above 50 and fails above 500.
+- Keep the `description` under 200 characters. Cursor uses that sentence to decide whether to load the file.
+- Leave `alwaysApply` false unless every project that installs the pack must see the rule on every chat. The validator warns when it is true.
+- Do not set `alwaysApply: true` together with `globs`. Cursor ignores `globs` in that case.
+- A pack may auto-load two skills. Set `disable-model-invocation: true` on every other skill so they load only from `/skill-name` or when another skill opens the file.
 - The marketplace `description` must match `plugin.json`.
 - `description` is required unless the rule is manual-only (`alwaysApply: false` and no `globs`).
 - `globs` is a quoted string. Separate patterns with commas: `"**/*.ts,**/*.tsx"`.

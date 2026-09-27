@@ -17,7 +17,7 @@ Refresh that index with `python3 scripts/fetch_skill_catalog.py`.
 
 1. Copy `templates/rule-plugin` to `plugins/<kebab-name>/`.
 2. Make the folder name, `plugin.json` `name`, and marketplace `name` match.
-3. Use the same `description` in `plugin.json` and `.cursor-plugin/marketplace.json`.
-4. Put one concern in each `rules/*.mdc` file. Stay under 50 lines. Include a BAD example and a GOOD example.
-5. Add `skills/<name>/SKILL.md` only for an original workflow. The `name` field must match the folder.
+3. Use the same `description` in `plugin.json` and `.cursor-plugin/marketplace.json`. Set `source` to `./plugins/<kebab-name>` and set `displayName` for the Customize label.
+4. Put one concern in each `rules/*.mdc` file. Stay under 50 lines. Include a BAD example and a GOOD example. Leave `alwaysApply` false unless every installed project needs the rule on every chat. Keep the description under 200 characters.
+5. Add `skills/<name>/SKILL.md` only for an original workflow. The `name` field must match the folder. At most two skills in the pack may load on their own. Set `disable-model-invocation: true` on the rest.
 6. Run `python3 scripts/validate_plugins.py` and fix every reported problem.

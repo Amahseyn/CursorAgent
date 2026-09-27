@@ -1,5 +1,6 @@
 {
   "name": "your-plugin-name",
+  "displayName": "Your plugin name",
   "version": "0.1.0",
   "description": "One sentence: who this pack helps and what it changes.",
   "author": {

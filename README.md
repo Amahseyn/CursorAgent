@@ -1,64 +1,40 @@
 # CursorAgent Rules
 
-Cursor rules written by Cursor users, for other Cursor users to install.
+Install a pack in Cursor, then type one command in the project you want reviewed.
 
-A rule in this repository is not a note inside one project. It is a plugin. After you push this repo to GitHub, another person can add the marketplace in Cursor and install a pack. The rules then show up in Customize next to their other rules.
+The full steps, team install, and the context rules are in [docs/how-to-use.md](docs/how-to-use.md).
 
-Cursor does not import loose `.mdc` files from a GitHub URL. The marketplace manifest at `.cursor-plugin/marketplace.json` is what makes a repository installable. Each pack lives in its own folder:
+## Use it
 
-```text
-plugins/your-pack/
-  .cursor-plugin/plugin.json
-  rules/your-rule.mdc
-  skills/your-skill/SKILL.md
-  README.md
-```
+1. Open **Customize** → **From GitHub Repository**.
+2. Paste `https://github.com/Amahseyn/CursorAgent`.
+3. Install **Any repo roles**.
+4. Open your project and work as usual.
 
-## Install a pack
+Cloning this repository does not turn the pack on. Cursor installs it from `.cursor-plugin/marketplace.json`.
 
-The GitHub repository has to be pushed first. This folder on your machine is not visible to other people until then.
+The default reads the code and calls only the matching role or language, then asks before it adds or modifies a rule. Type `all` when you want every applicable role. Other commands stay out of the chat until you ask for them.
 
-1. In Cursor, open Customize.
-2. Add this repository from GitHub (`https://github.com/Amahseyn/CursorAgent`). Cursor looks for `.cursor-plugin/marketplace.json`.
-3. Install a plugin, for example `any-repo-roles` or `example-rule-pack`.
-
-Team and Enterprise workspaces can add the same repository as a team marketplace. Installing a plugin is per user unless an admin assigns it.
-
-`any-repo-roles` reviews any repository as senior security, product design, and the other roles that review a software change, in the language that repository already uses. `example-rule-pack` is only a format sample.
-
-## Add a rule for other people
+## Add a pack
 
 1. Copy `templates/rule-plugin` to `plugins/<kebab-name>/`.
-2. Set `name` in `.cursor-plugin/plugin.json` to that same folder name.
-3. Replace the sample rule. One concern per file. Stay under 50 lines. Include a bad example and a good example.
-4. Add an entry to `.cursor-plugin/marketplace.json` with `"source": "plugins/<kebab-name>"`.
-5. Run `python3 scripts/validate_plugins.py`.
-6. Open a pull request. Contributions are MIT licensed.
+2. Set `name` in `plugins/<kebab-name>/.cursor-plugin/plugin.json` to that folder name. `displayName` is the label in Customize.
+3. One `.mdc` per concern, under 50 lines, with a `BAD` line and a `GOOD` line. Leave `alwaysApply` false unless every installed project must see the rule on every chat.
+4. Add `"source": "./plugins/<kebab-name>"` to `.cursor-plugin/marketplace.json`, with the same `description` as `plugin.json`.
+5. A pack may auto-load two skills. Set `disable-model-invocation: true` on the rest.
+6. Run `python3 scripts/validate_plugins.py`.
 
-Pick one apply mode in the frontmatter:
-
-| You want | Frontmatter |
-| --- | --- |
-| Agent decides from the description | `alwaysApply: false`, a `description`, no `globs` |
-| Only when certain files are open | `alwaysApply: false`, `globs`, and a `description` |
-| Every chat in every project that installs the pack | `alwaysApply: true` |
-| Only when someone @-mentions the rule | `alwaysApply: false`, and omit both `description` and `globs` |
-
-Use `alwaysApply: true` only when the rule is safe in projects you have never seen.
-
-Rules under `.cursor/rules/` apply while someone is editing *this* repository. They are not what other people install.
+Details are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Layout
 
 | Path | Purpose |
 | --- | --- |
+| `docs/how-to-use.md` | How to install and use a pack |
 | `.cursor-plugin/marketplace.json` | Lists every installable pack |
-| `plugins/` | Packs other people can install. A pack can include `rules/*.mdc` and `skills/<name>/SKILL.md` |
+| `plugins/` | Packs other people install |
 | `templates/rule-plugin/` | Copy this to start a pack. It is not installable. |
-| `.cursor/rules/` | Instructions for agents working in this repo |
-| `catalog/skills.json` | Downloaded index of public Cursor skills. Names and source links only |
-| `scripts/validate_plugins.py` | Checks names, manifests, rule frontmatter, and skills |
-| `scripts/fetch_skill_catalog.py` | Refreshes `catalog/skills.json` from the public sources |
+| `scripts/validate_plugins.py` | Checks manifests, frontmatter, and context limits |
 
 ## License
 

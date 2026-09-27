@@ -1,17 +1,49 @@
 ---
 name: analyze-as-role
-description: Analyze any language and any repository type from every software role, including senior security and product design. Use when the user asks for a review, an audit, all roles, or a multi-role analysis.
+description: "Use when the user asks for a review, says all or everything, or wants every applicable role."
 ---
 
 # Analyze as a role
 
-1. Detect the languages from extensions, manifests, and tool configs. Name the repository type you see. Follow `/use-repo-language` for each language the repo already contains.
-2. If the user names roles, review as those roles. Otherwise review as every role in this pack.
-3. Always include senior security and product design unless the user excluded them.
-4. Open that role's sibling `SKILL.md` and apply it. Skip a role only when the repo has nothing for it to inspect, and say why.
-5. Lead with findings more than one role would flag. Tie each finding to a file or command in this repo.
+## When to use
 
-Roles:
+Use this for a review. "all", "all roles", "everything", "full review", and "etc" mean every applicable role plus each language already present.
+
+## Instructions
+
+1. Detect languages from extensions, manifests, and tool configs. Name the repository type.
+2. If they name roles or languages, review only those. If they give no scope, review senior security, product design, and the language that owns the files being discussed.
+3. Open one sibling `SKILL.md` at a time and apply its Checks. Do not keep every skill in context.
+4. Skip a role with nothing to inspect, and say why in one line. Do not invent a UI, service, or model.
+5. Lead with findings more than one role would flag. Tie each finding to a file or command.
+
+## Ask before writing rules
+
+Do not write rules yet. List each proposal as add, modify, or skip.
+
+- Add: a new `.cursor/rules/<concern>.mdc`.
+- Modify: an existing file, and the change you would make.
+- Skip a role that found nothing.
+
+Wait for the answer. Write only what the user accepts.
+
+## Worked pass
+
+The user says "all" in a Go service that has HTTP handlers and a SQL migration.
+
+1. Detect Go and SQL. The repository type is a service.
+2. Open every role skill that has a surface, one at a time, plus `/go` and `/sql`. Skip game, embedded, and mobile in one line each because those files are not here.
+3. Keep senior security and product design even when the user did not name them.
+4. Lead with a finding both security and the API role would flag, with the file path.
+5. Propose one rule per role that found something. Mark each add or modify. Wait.
+
+## Guidelines
+
+- An accepted rule uses `alwaysApply: false`, a description under 200 characters, and `globs` only for file types already in the project.
+- Stay under 50 lines, with a BAD line and a GOOD line from this project.
+- Do not write into `plugins/` unless they asked to publish a pack.
+
+## Roles
 
 - `/senior-security-engineer` — Senior security engineer
 - `/privacy-engineer` — Privacy engineer

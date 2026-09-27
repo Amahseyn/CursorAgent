@@ -1,0 +1,17 @@
+---
+description: When the user says all, all roles, everything, or a full review, analyze every applicable role and ask before adding or modifying rules
+alwaysApply: false
+---
+
+# When they say all
+
+- Treat "all", "all roles", "everything", "full review", and "etc" as every applicable role plus each language already in the project.
+- Read one role or language `SKILL.md` at a time. Those files are not already in context.
+- Skip a role that has nothing to inspect. Do not invent a stack.
+- Propose durable findings as rules under `.cursor/rules/` in the project being reviewed.
+- Ask whether to add a new rule, modify an existing one, or skip. Write a file only after they choose.
+
+```text
+BAD:  Write the rule files before asking.
+GOOD: List add and modify proposals, then write only the ones the user accepts.
+```

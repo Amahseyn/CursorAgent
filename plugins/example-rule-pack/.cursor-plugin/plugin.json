@@ -1,5 +1,6 @@
 {
   "name": "example-rule-pack",
+  "displayName": "Example rule pack",
   "version": "0.1.0",
   "description": "Example Cursor rules that show how a shared pack is structured. Add your own pack beside this one.",
   "author": {

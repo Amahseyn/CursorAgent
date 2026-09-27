@@ -1,16 +1,32 @@
 ---
 name: use-repo-language
-description: Follow the language skills for every language this repository already contains. Use when editing or reviewing code in any language, including Python, TypeScript, Go, Rust, Java, C, C++, C#, Ruby, PHP, Kotlin, Swift, SQL, and the other languages in this pack.
+description: "Use when the open project has a known language or framework and that skill should be opened."
+disable-model-invocation: true
 ---
 
 # Use the repo language
 
+## When to use
+
+Use this when the default route has already named a language that is present in the project.
+
+## Instructions
+
 1. Detect languages from extensions, manifests, and tool configs.
-2. Open the skill below for each language that is actually present.
+2. Open `../<name>/SKILL.md` for each language that is actually present. Those files are not already in context.
 3. Skip a language the repository does not contain. Do not add it.
 4. In a mixed repo, follow the language that owns the file you are changing.
 
-Languages and ecosystems:
+## Worked pass
+
+The repository has `go.mod`, `*.go` files, and a `package.json` only inside `web/`.
+
+1. Open `/go` for a change under the module root.
+2. Open `/javascript` or `/typescript` only when the file you are changing is under `web/`.
+3. Do not open `/python` or `/rust`. Do not add those languages.
+4. Apply the opened skill's checks, then ask before you add or modify a rule.
+
+## Languages
 
 - `/python` — Python
 - `/typescript` — TypeScript

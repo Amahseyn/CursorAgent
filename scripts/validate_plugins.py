@@ -14,6 +14,8 @@ NAME_RE = re.compile(r"^[a-z0-9]+(?:[.-][a-z0-9]+)*$")
 SKILL_NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 MAX_RULE_LINES = 500
 PREFERRED_RULE_LINES = 50
+AUTO_SKILL_LIMIT = 2
+MAX_DESCRIPTION_CHARS = 200
 SKILL_KEYS = {
     "name",
     "description",
@@ -166,8 +168,17 @@ def main() -> int:
             always = meta.get("alwaysApply", "")
             if always not in {"true", "false"}:
                 fail(f"{rule.relative_to(ROOT)}: alwaysApply must be true or false")
+            if always == "true":
+                warn(f"{rule.relative_to(ROOT)}: alwaysApply true loads this rule on every chat")
             description = meta.get("description", "")
             globs = meta.get("globs", "")
+            if always == "true" and globs:
+                warn(f"{rule.relative_to(ROOT)}: globs are ignored when alwaysApply is true")
+            if len(description) > MAX_DESCRIPTION_CHARS:
+                warn(
+                    f"{rule.relative_to(ROOT)}: description is {len(description)} characters; "
+                    f"keep it under {MAX_DESCRIPTION_CHARS} so unused chats stay small"
+                )
             manual = always == "false" and not description and not globs
             if not description and not manual:
                 fail(f"{rule.relative_to(ROOT)}: description is required unless the rule is manual-only")
@@ -189,6 +200,7 @@ def check_skills(plugin_dir: Path) -> int:
         fail(f"{skills_root.relative_to(ROOT)}: skills must be a directory")
         return 0
     count = 0
+    auto = 0
     for path in sorted(skills_root.rglob("SKILL.md")):
         relative = path.relative_to(skills_root)
         label = path.relative_to(ROOT)
@@ -209,9 +221,22 @@ def check_skills(plugin_dir: Path) -> int:
         flag = meta.get("disable-model-invocation")
         if flag is not None and flag not in {"true", "false"}:
             fail(f"{label}: disable-model-invocation must be true or false")
+        if flag != "true":
+            auto += 1
+            if len(meta.get("description", "")) > MAX_DESCRIPTION_CHARS:
+                warn(
+                    f"{label}: description is {len(meta.get('description', ''))} characters; "
+                    f"keep it under {MAX_DESCRIPTION_CHARS}"
+                )
         unknown = set(meta) - SKILL_KEYS
         if unknown:
             fail(f"{label}: unknown frontmatter {sorted(unknown)}")
+    if auto > AUTO_SKILL_LIMIT:
+        fail(
+            f"{plugin_dir.name}: {auto} skills load on their own. "
+            f"Set disable-model-invocation: true on all but {AUTO_SKILL_LIMIT} "
+            "so the rest stay out of context until /name or a sibling file is opened"
+        )
     return count
 
 

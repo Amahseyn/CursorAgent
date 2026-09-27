@@ -5,7 +5,7 @@ alwaysApply: false
 
 # Rule title
 
-One concern. Tell the agent what to do.
+One concern. Leave `alwaysApply` false so this file stays out of chats that do not match the description.
 
 ```text
 BAD:  the pattern to avoid

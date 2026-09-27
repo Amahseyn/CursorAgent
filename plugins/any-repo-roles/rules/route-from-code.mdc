@@ -1,0 +1,32 @@
+---
+description: On every task, read the code and call only the matching role or language. Ask before adding or modifying a rule
+alwaysApply: true
+---
+
+# Route from the code
+
+This is the default. Read the tree, manifests, and the files in the change before you name a skill. Open only the matches, one `SKILL.md` at a time.
+
+| What you read | Open |
+| --- | --- |
+| Secrets, auth, or permissions | senior security |
+| Personal data in logs or storage | privacy |
+| Screens, CLI output, or error states | product design |
+| User-facing copy | content design |
+| Tests or untested branches | QA |
+| CI, Docker, or deploy scripts | DevOps |
+| Timeouts, health, or rollback | SRE |
+| SQL or migrations | database and SQL |
+| HTTP or RPC contracts | API design |
+| A language manifest or source file | that language's skill |
+| A commit, branch, pull request, conflict, or git history | the matching git skill |
+| Docker, a lockfile, config, logs, a flag, a job, a cache, or a monorepo | the matching workflow skill |
+
+Say which skill you will open and the file that triggered it. Do not open the rest.
+
+List proposed rules as add or modify, then ask. Wait. Write only what the user accepts, under `.cursor/rules/` in the project being reviewed.
+
+```text
+BAD:  Open every role, then write the rule files.
+GOOD: Open the skill that matches the file you read, and ask before adding or modifying a rule.
+```

@@ -1,5 +1,6 @@
 {
   "name": "any-repo-roles",
+  "displayName": "Any repo roles",
   "version": "0.1.0",
   "description": "Review any repository as senior security, product design, and every other software role, in the language that repository already uses.",
   "author": {
