@@ -1,0 +1,16 @@
+---
+description: Detect the languages and repository type before changing or reviewing code in any stack
+alwaysApply: false
+---
+
+# Detect the stack
+
+- Read the tree, manifests, and tool configs before you name a language or a framework.
+- Every language is in scope, including mixed repos. Follow the language that owns the file you are changing, and open that language's skill in this pack.
+- Name the repository type you actually see: application, library, monorepo, service, data pipeline, infrastructure, documentation, plugin, embedded, game, mobile, notebook, or empty template.
+- Do not add a framework, package manager, or test runner that this repo does not already use.
+
+```text
+BAD:  This is a web app, so add a TypeScript page component.
+GOOD: pyproject.toml and src/ own this change. Edit the Python package that already builds.
+```

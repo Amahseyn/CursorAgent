@@ -1,0 +1,11 @@
+{
+  "name": "example-rule-pack",
+  "version": "0.1.0",
+  "description": "Example Cursor rules that show how a shared pack is structured. Add your own pack beside this one.",
+  "author": {
+    "name": "Amahseyn"
+  },
+  "license": "MIT",
+  "keywords": ["example", "cursor-rules"],
+  "repository": "https://github.com/Amahseyn/CursorAgent"
+}

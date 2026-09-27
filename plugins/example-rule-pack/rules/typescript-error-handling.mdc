@@ -1,0 +1,26 @@
+---
+description: Handle TypeScript errors explicitly instead of swallowing them
+globs: "**/*.ts,**/*.tsx"
+alwaysApply: false
+---
+
+# TypeScript error handling
+
+- Do not use empty `catch` blocks.
+- Log with context, then rethrow a typed error or return a structured failure.
+- Preserve the original error as `cause`.
+
+```typescript
+// BAD
+try {
+  await fetchData();
+} catch (e) {}
+
+// GOOD
+try {
+  await fetchData();
+} catch (error) {
+  logger.error("Failed to fetch data", { error });
+  throw new DataFetchError("Unable to retrieve data", { cause: error });
+}
+```

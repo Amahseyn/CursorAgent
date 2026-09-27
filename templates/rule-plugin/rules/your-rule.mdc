@@ -1,0 +1,13 @@
+---
+description: When the agent should apply this rule, in one sentence
+alwaysApply: false
+---
+
+# Rule title
+
+One concern. Tell the agent what to do.
+
+```text
+BAD:  the pattern to avoid
+GOOD: the pattern to use
+```

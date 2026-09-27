@@ -1,0 +1,1593 @@
+{
+  "note": "Index only. Skill instructions stay in the upstream repository under that repository's license.",
+  "sources": {
+    "cursorDocs": "https://cursor.com/docs/skills",
+    "cursorPlugins": "https://github.com/cursor/plugins",
+    "awesomeCursorSkills": "https://github.com/spencerpauly/awesome-cursor-skills",
+    "skillsDirectory": "https://skills.sh"
+  },
+  "builtin": [
+    {
+      "name": "automate",
+      "invoke": "/automate",
+      "summary": "Creates Cursor Automations from schedules, Slack, GitHub, and other triggers.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "autopilot",
+      "invoke": "/autopilot",
+      "summary": "Keeps a pull request merge-ready by handling feedback, conflicts, and failing checks.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "canvas",
+      "invoke": "/canvas",
+      "summary": "Creates interactive React artifacts beside the chat.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "create-hook",
+      "invoke": "/create-hook",
+      "summary": "Creates Cursor hooks and hooks.json entries.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "create-rule",
+      "invoke": "/create-rule",
+      "summary": "Creates Cursor rules with the right scope.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "create-skill",
+      "invoke": "/create-skill",
+      "summary": "Creates Agent Skills and SKILL.md files.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "create-subagent",
+      "invoke": "/create-subagent",
+      "summary": "Creates a custom subagent with a focused role.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "cursor-blame",
+      "invoke": "/cursor-blame",
+      "summary": "Investigates AI-authored changes and the prompts behind them.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "loop",
+      "invoke": "/loop",
+      "summary": "Runs a prompt or skill on an interval.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "migrate-to-skills",
+      "invoke": "/migrate-to-skills",
+      "summary": "Converts eligible dynamic rules and slash commands into skills.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "review",
+      "invoke": "/review",
+      "summary": "Selects and runs a code-review agent.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "review-bugbot",
+      "invoke": "/review-bugbot",
+      "summary": "Reviews changes for likely bugs with Bugbot.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "review-security",
+      "invoke": "/review-security",
+      "summary": "Reviews changes for security issues.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "sdk",
+      "invoke": "/sdk",
+      "summary": "Builds apps and automations on the Cursor SDK.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "shell",
+      "invoke": "/shell",
+      "summary": "Runs the given text as a shell command.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "split-to-prs",
+      "invoke": "/split-to-prs",
+      "summary": "Splits a large change into smaller pull requests.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "statusline",
+      "invoke": "/statusline",
+      "summary": "Configures the Cursor CLI status line.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "update-cli-config",
+      "invoke": "/update-cli-config",
+      "summary": "Updates Cursor CLI settings in ~/.cursor/cli-config.json.",
+      "source": "https://cursor.com/docs/skills"
+    },
+    {
+      "name": "update-cursor-settings",
+      "invoke": "/update-cursor-settings",
+      "summary": "Finds and updates a Cursor or VS Code setting.",
+      "source": "https://cursor.com/docs/skills"
+    }
+  ],
+  "cursorPlugins": [
+    {
+      "plugin": "advisor",
+      "pluginDescription": "Consult a stronger model before major decisions, when stuck, and before declaring done.",
+      "name": "advisor",
+      "path": "advisor/skills/advisor/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/advisor/skills/advisor/SKILL.md"
+    },
+    {
+      "plugin": "agent-compatibility",
+      "pluginDescription": "CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality.",
+      "name": "check-agent-compatibility",
+      "path": "agent-compatibility/skills/check-agent-compatibility/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/agent-compatibility/skills/check-agent-compatibility/SKILL.md"
+    },
+    {
+      "plugin": "cli-for-agent",
+      "pluginDescription": "Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run.",
+      "name": "cli-for-agents",
+      "path": "cli-for-agent/skills/cli-for-agents/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cli-for-agent/skills/cli-for-agents/SKILL.md"
+    },
+    {
+      "plugin": "continual-learning",
+      "pluginDescription": "Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only.",
+      "name": "continual-learning",
+      "path": "continual-learning/skills/continual-learning/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/continual-learning/skills/continual-learning/SKILL.md"
+    },
+    {
+      "plugin": "create-plugin",
+      "pluginDescription": "Scaffold and validate new agent plugins.",
+      "name": "create-plugin-scaffold",
+      "path": "create-plugin/skills/create-plugin-scaffold/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/create-plugin/skills/create-plugin-scaffold/SKILL.md"
+    },
+    {
+      "plugin": "create-plugin",
+      "pluginDescription": "Scaffold and validate new agent plugins.",
+      "name": "review-plugin-submission",
+      "path": "create-plugin/skills/review-plugin-submission/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/create-plugin/skills/review-plugin-submission/SKILL.md"
+    },
+    {
+      "plugin": "cursor-sdk",
+      "pluginDescription": "Build apps, scripts, and automations with the TypeScript SDK.",
+      "name": "cursor-sdk",
+      "path": "cursor-sdk/skills/cursor-sdk/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-sdk/skills/cursor-sdk/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "check-compiler-errors",
+      "path": "cursor-team-kit/skills/check-compiler-errors/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/check-compiler-errors/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "control-cli",
+      "path": "cursor-team-kit/skills/control-cli/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/control-cli/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "control-ui",
+      "path": "cursor-team-kit/skills/control-ui/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/control-ui/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "deslop",
+      "path": "cursor-team-kit/skills/deslop/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/deslop/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "fix-ci",
+      "path": "cursor-team-kit/skills/fix-ci/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/fix-ci/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "fix-merge-conflicts",
+      "path": "cursor-team-kit/skills/fix-merge-conflicts/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/fix-merge-conflicts/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "get-pr-comments",
+      "path": "cursor-team-kit/skills/get-pr-comments/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/get-pr-comments/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "loop-on-ci",
+      "path": "cursor-team-kit/skills/loop-on-ci/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/loop-on-ci/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "make-pr-easy-to-review",
+      "path": "cursor-team-kit/skills/make-pr-easy-to-review/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/make-pr-easy-to-review/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "new-branch-and-pr",
+      "path": "cursor-team-kit/skills/new-branch-and-pr/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/new-branch-and-pr/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "pr-review-canvas",
+      "path": "cursor-team-kit/skills/pr-review-canvas/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/pr-review-canvas/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "review-and-ship",
+      "path": "cursor-team-kit/skills/review-and-ship/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/review-and-ship/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "run-smoke-tests",
+      "path": "cursor-team-kit/skills/run-smoke-tests/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/run-smoke-tests/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "thermo-nuclear-code-quality-review",
+      "path": "cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "verify-this",
+      "path": "cursor-team-kit/skills/verify-this/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/verify-this/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "weekly-review",
+      "path": "cursor-team-kit/skills/weekly-review/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/weekly-review/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "what-did-i-get-done",
+      "path": "cursor-team-kit/skills/what-did-i-get-done/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/what-did-i-get-done/SKILL.md"
+    },
+    {
+      "plugin": "cursor-team-kit",
+      "pluginDescription": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "name": "workflow-from-chats",
+      "path": "cursor-team-kit/skills/workflow-from-chats/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/cursor-team-kit/skills/workflow-from-chats/SKILL.md"
+    },
+    {
+      "plugin": "docs-canvas",
+      "pluginDescription": "Render documentation as a navigable canvas.",
+      "name": "docs-canvas",
+      "path": "docs-canvas/skills/docs-canvas/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/docs-canvas/skills/docs-canvas/SKILL.md"
+    },
+    {
+      "plugin": "grok-voice",
+      "pluginDescription": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+      "name": "add-dictation",
+      "path": "grok-voice/skills/add-dictation/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/grok-voice/skills/add-dictation/SKILL.md"
+    },
+    {
+      "plugin": "grok-voice",
+      "pluginDescription": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+      "name": "add-read-aloud",
+      "path": "grok-voice/skills/add-read-aloud/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/grok-voice/skills/add-read-aloud/SKILL.md"
+    },
+    {
+      "plugin": "grok-voice",
+      "pluginDescription": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+      "name": "add-voice",
+      "path": "grok-voice/skills/add-voice/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/grok-voice/skills/add-voice/SKILL.md"
+    },
+    {
+      "plugin": "grok-voice",
+      "pluginDescription": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+      "name": "debug-voice",
+      "path": "grok-voice/skills/debug-voice/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/grok-voice/skills/debug-voice/SKILL.md"
+    },
+    {
+      "plugin": "orchestrate",
+      "pluginDescription": "Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs.",
+      "name": "orchestrate",
+      "path": "orchestrate/skills/orchestrate/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/orchestrate/skills/orchestrate/SKILL.md"
+    },
+    {
+      "plugin": "pr-review-canvas",
+      "pluginDescription": "Render PR diffs as review canvases grouped by importance.",
+      "name": "pr-review-canvas",
+      "path": "pr-review-canvas/skills/pr-review-canvas/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pr-review-canvas/skills/pr-review-canvas/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "reproduce-and-fix-issues",
+      "path": "pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "setup-benny",
+      "path": "pstack/automations/benny/skills/setup-benny/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/automations/benny/skills/setup-benny/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "triage-issue-reports",
+      "path": "pstack/automations/benny/skills/triage-issue-reports/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/automations/benny/skills/triage-issue-reports/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "architect",
+      "path": "pstack/skills/architect/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/architect/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "arena",
+      "path": "pstack/skills/arena/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/arena/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "automate-me",
+      "path": "pstack/skills/automate-me/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/automate-me/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "blast-radius",
+      "path": "pstack/skills/blast-radius/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/blast-radius/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "bro",
+      "path": "pstack/skills/bro/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/bro/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "create-verification-skill",
+      "path": "pstack/skills/create-verification-skill/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/create-verification-skill/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "figure-it-out",
+      "path": "pstack/skills/figure-it-out/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/figure-it-out/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "how",
+      "path": "pstack/skills/how/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/how/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "interrogate",
+      "path": "pstack/skills/interrogate/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/interrogate/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "maintain-verification-skill",
+      "path": "pstack/skills/maintain-verification-skill/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/maintain-verification-skill/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "make-bot-ui",
+      "path": "pstack/skills/make-bot-ui/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/make-bot-ui/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "no-comments",
+      "path": "pstack/skills/no-comments/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/no-comments/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "poteto-mode",
+      "path": "pstack/skills/poteto-mode/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/poteto-mode/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-attack-the-premise",
+      "path": "pstack/skills/principle-attack-the-premise/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-attack-the-premise/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-boundary-discipline",
+      "path": "pstack/skills/principle-boundary-discipline/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-boundary-discipline/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-build-the-lever",
+      "path": "pstack/skills/principle-build-the-lever/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-build-the-lever/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-encode-lessons-in-structure",
+      "path": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-exhaust-the-design-space",
+      "path": "pstack/skills/principle-exhaust-the-design-space/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-exhaust-the-design-space/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-experience-first",
+      "path": "pstack/skills/principle-experience-first/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-experience-first/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-fix-root-causes",
+      "path": "pstack/skills/principle-fix-root-causes/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-fix-root-causes/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-foundational-thinking",
+      "path": "pstack/skills/principle-foundational-thinking/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-foundational-thinking/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-guard-the-context-window",
+      "path": "pstack/skills/principle-guard-the-context-window/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-guard-the-context-window/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-laziness-protocol",
+      "path": "pstack/skills/principle-laziness-protocol/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-laziness-protocol/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-make-operations-idempotent",
+      "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-make-operations-idempotent/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-migrate-callers-then-delete-legacy-apis",
+      "path": "pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-minimize-reader-load",
+      "path": "pstack/skills/principle-minimize-reader-load/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-minimize-reader-load/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-model-the-domain",
+      "path": "pstack/skills/principle-model-the-domain/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-model-the-domain/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-never-block-on-the-human",
+      "path": "pstack/skills/principle-never-block-on-the-human/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-never-block-on-the-human/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-outcome-oriented-execution",
+      "path": "pstack/skills/principle-outcome-oriented-execution/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-outcome-oriented-execution/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-prove-it-works",
+      "path": "pstack/skills/principle-prove-it-works/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-prove-it-works/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-redesign-from-first-principles",
+      "path": "pstack/skills/principle-redesign-from-first-principles/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-redesign-from-first-principles/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-separate-before-serializing-shared-state",
+      "path": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-sequence-verifiable-units",
+      "path": "pstack/skills/principle-sequence-verifiable-units/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-sequence-verifiable-units/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-subtract-before-you-add",
+      "path": "pstack/skills/principle-subtract-before-you-add/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-subtract-before-you-add/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-test-behavior-not-implementation",
+      "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "principle-type-system-discipline",
+      "path": "pstack/skills/principle-type-system-discipline/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/principle-type-system-discipline/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "recall",
+      "path": "pstack/skills/recall/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/recall/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "reflect",
+      "path": "pstack/skills/reflect/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/reflect/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "setup-pstack",
+      "path": "pstack/skills/setup-pstack/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/setup-pstack/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "show-me-your-work",
+      "path": "pstack/skills/show-me-your-work/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/show-me-your-work/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "swarm",
+      "path": "pstack/skills/swarm/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/swarm/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "tdd",
+      "path": "pstack/skills/tdd/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/tdd/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "teach",
+      "path": "pstack/skills/teach/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/teach/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "technical-writing",
+      "path": "pstack/skills/technical-writing/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/technical-writing/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "typescript-best-practices",
+      "path": "pstack/skills/typescript-best-practices/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/typescript-best-practices/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "unslop",
+      "path": "pstack/skills/unslop/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/unslop/SKILL.md"
+    },
+    {
+      "plugin": "pstack",
+      "pluginDescription": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "name": "why",
+      "path": "pstack/skills/why/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/pstack/skills/why/SKILL.md"
+    },
+    {
+      "plugin": "ralph-loop",
+      "pluginDescription": "Iterative self-referential AI loops using the Ralph Wiggum technique.",
+      "name": "cancel-ralph",
+      "path": "ralph-loop/skills/cancel-ralph/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/ralph-loop/skills/cancel-ralph/SKILL.md"
+    },
+    {
+      "plugin": "ralph-loop",
+      "pluginDescription": "Iterative self-referential AI loops using the Ralph Wiggum technique.",
+      "name": "ralph-loop-help",
+      "path": "ralph-loop/skills/ralph-loop-help/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/ralph-loop/skills/ralph-loop-help/SKILL.md"
+    },
+    {
+      "plugin": "ralph-loop",
+      "pluginDescription": "Iterative self-referential AI loops using the Ralph Wiggum technique.",
+      "name": "ralph-loop",
+      "path": "ralph-loop/skills/ralph-loop/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/ralph-loop/skills/ralph-loop/SKILL.md"
+    },
+    {
+      "plugin": "teaching",
+      "pluginDescription": "Skill mapping, practice plans, and learning retrospectives.",
+      "name": "create-learning-path",
+      "path": "teaching/skills/create-learning-path/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/teaching/skills/create-learning-path/SKILL.md"
+    },
+    {
+      "plugin": "teaching",
+      "pluginDescription": "Skill mapping, practice plans, and learning retrospectives.",
+      "name": "run-learning-retrospective",
+      "path": "teaching/skills/run-learning-retrospective/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/teaching/skills/run-learning-retrospective/SKILL.md"
+    },
+    {
+      "plugin": "thermos",
+      "pluginDescription": "Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows.",
+      "name": "thermo-nuclear-code-quality-review",
+      "path": "thermos/skills/thermo-nuclear-code-quality-review/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md"
+    },
+    {
+      "plugin": "thermos",
+      "pluginDescription": "Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows.",
+      "name": "thermo-nuclear-review",
+      "path": "thermos/skills/thermo-nuclear-review/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/thermos/skills/thermo-nuclear-review/SKILL.md"
+    },
+    {
+      "plugin": "thermos",
+      "pluginDescription": "Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows.",
+      "name": "thermos",
+      "path": "thermos/skills/thermos/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/thermos/skills/thermos/SKILL.md"
+    },
+    {
+      "plugin": "third_party",
+      "pluginDescription": "",
+      "name": "google-docs",
+      "path": "third_party/google-docs/skills/google-docs/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/third_party/google-docs/skills/google-docs/SKILL.md"
+    },
+    {
+      "plugin": "third_party",
+      "pluginDescription": "",
+      "name": "google-sheets",
+      "path": "third_party/google-sheets/skills/google-sheets/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/third_party/google-sheets/skills/google-sheets/SKILL.md"
+    },
+    {
+      "plugin": "third_party",
+      "pluginDescription": "",
+      "name": "google-slides",
+      "path": "third_party/google-slides/skills/google-slides/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/third_party/google-slides/skills/google-slides/SKILL.md"
+    },
+    {
+      "plugin": "third_party",
+      "pluginDescription": "",
+      "name": "x-money-guide",
+      "path": "third_party/x-money/skills/x-money-guide/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/third_party/x-money/skills/x-money-guide/SKILL.md"
+    },
+    {
+      "plugin": "third_party",
+      "pluginDescription": "",
+      "name": "x-api-mcp-guide",
+      "path": "third_party/x/skills/x-api-mcp-guide/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/third_party/x/skills/x-api-mcp-guide/SKILL.md"
+    },
+    {
+      "plugin": "third_party",
+      "pluginDescription": "",
+      "name": "x-chat",
+      "path": "third_party/x/skills/x-chat/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/HEAD/third_party/x/skills/x-chat/SKILL.md"
+    }
+  ],
+  "awesomeCursorSkills": [
+    {
+      "name": "suggesting-cursor-rules",
+      "section": "Cursor-Native",
+      "summary": "If you keep correcting the agent on the same convention, it suggests a `.cursor/rules/` file to encode it permanently.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/suggesting-cursor-rules/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "suggesting-cursor-hooks",
+      "section": "Cursor-Native",
+      "summary": "If you keep asking the agent to run the same check (lint, types, tests), it suggests a `.cursor/hooks.json` hook to automate it.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/suggesting-cursor-hooks/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "switching-projects",
+      "section": "Cursor-Native",
+      "summary": "Switch the active workspace to a different project using the `cursor-app-control` MCP, without opening a new window.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/switching-projects/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "saving-workspace-context",
+      "section": "Cursor-Native",
+      "summary": "Automatically persist research, decisions, and learnings to workspace files so knowledge survives across conversations.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/saving-workspace-context/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "visual-qa-testing",
+      "section": "Cursor-Native",
+      "summary": "Open the app in Cursor's built-in browser, take screenshots, check console errors, and audit network requests after making changes.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/visual-qa-testing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "verifying-in-browser",
+      "section": "Cursor-Native",
+      "summary": "Start the dev server, open the app side-by-side with your code, and verify rendering, console, and network health.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/verifying-in-browser/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "profiling-performance",
+      "section": "Cursor-Native",
+      "summary": "Profile CPU performance of a running app using Cursor's browser profiler to capture call stacks and identify slow functions.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/profiling-performance/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "screenshotting-changelog",
+      "section": "Cursor-Native",
+      "summary": "Generate visual before/after PR descriptions by screenshotting UI changes across branches.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/screenshotting-changelog/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "best-of-n-solving",
+      "section": "Cursor-Native",
+      "summary": "Try multiple approaches to a hard problem in parallel using isolated git worktrees, then pick the best solution.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/best-of-n-solving/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "parallel-exploring",
+      "section": "Cursor-Native",
+      "summary": "Explore a large codebase fast by launching multiple read-only subagents that investigate different areas simultaneously.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/parallel-exploring/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "grinding-until-pass",
+      "section": "Cursor-Native",
+      "summary": "Keep iterating autonomously \u2014 fix, run, check, repeat \u2014 until tests pass, the build succeeds, or linting is clean.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/grinding-until-pass/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "finding-dev-server-url",
+      "section": "Cursor-Native",
+      "summary": "Scan running terminals for dev server URLs and ports, report what's running where, and open the app in Cursor's browser.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/finding-dev-server-url/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "monitoring-terminal-errors",
+      "section": "Cursor-Native",
+      "summary": "Watch a running process for crashes and stack traces, navigate to the failing file, and fix it automatically.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/monitoring-terminal-errors/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "detecting-port-conflicts",
+      "section": "Cursor-Native",
+      "summary": "Detect `EADDRINUSE` errors, find what's using the port, and resolve by killing the process or suggesting an alternative.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/detecting-port-conflicts/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "tailing-build-output",
+      "section": "Cursor-Native",
+      "summary": "Monitor a build process for warnings and errors as they stream, fix issues before the build finishes.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/tailing-build-output/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "responsive-testing",
+      "section": "Cursor-Native",
+      "summary": "Open the app at multiple viewport sizes (mobile, tablet, desktop), screenshot each, and report layout breakage.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/responsive-testing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "dark-mode-testing",
+      "section": "Cursor-Native",
+      "summary": "Toggle between light and dark mode in the browser, screenshot both, and flag missing token mappings or contrast issues.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/dark-mode-testing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "accessibility-auditing",
+      "section": "Cursor-Native",
+      "summary": "Use the browser's aria tree to audit for missing labels, broken tab order, ARIA misuse, and contrast issues.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/accessibility-auditing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "form-testing",
+      "section": "Cursor-Native",
+      "summary": "Fill and submit every form with valid/invalid data using the browser, verifying validation, error states, and success flows.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/form-testing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "parallel-test-fixing",
+      "section": "Cursor-Native",
+      "summary": "When multiple tests fail, assign each to a separate subagent that fixes it independently in parallel.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/parallel-test-fixing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "codebase-onboarding",
+      "section": "Cursor-Native",
+      "summary": "Launch parallel explore subagents to investigate architecture, data models, auth, APIs, and deployment \u2014 then synthesize an onboarding doc.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/codebase-onboarding/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "comparing-branches-visually",
+      "section": "Cursor-Native",
+      "summary": "Run two branches on different ports, screenshot the same pages from each, and produce a visual diff for PRs.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/comparing-branches-visually/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "auto-type-checking",
+      "section": "Cursor-Native",
+      "summary": "Run `tsc --noEmit` after file edits to catch type errors immediately. Supports Cursor hooks for automation.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/auto-type-checking/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "suggesting-skills",
+      "section": "Cursor-Native",
+      "summary": "When you're struggling with a task a known skill handles, the agent suggests installing it.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/suggesting-skills/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "parallel-ci-triage",
+      "section": "Cursor-Native",
+      "summary": "Fetch failing GitHub Actions logs, assign each failing job to a parallel subagent, fix independently, then merge and re-run CI.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/parallel-ci-triage/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "parallel-code-review",
+      "section": "Cursor-Native",
+      "summary": "Run four read-only subagents in parallel \u2014 security, performance, correctness, readability \u2014 and merge into one review report.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/parallel-code-review/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "network-request-auditing",
+      "section": "Cursor-Native",
+      "summary": "Use the browser's network log to flag failed requests, slowness, duplicates, and risky payloads after real user interactions.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/network-request-auditing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "recording-browser-flow-as-test",
+      "section": "Cursor-Native",
+      "summary": "Walk a flow in Cursor's browser, log each step, then emit a Playwright spec using role/name locators from the accessibility tree.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/recording-browser-flow-as-test/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "building-skills-from-patterns",
+      "section": "Cursor-Native",
+      "summary": "Turn repeated multi-step workflows into a new `SKILL.md` under `.cursor/skills/` so the agent can reuse them.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/building-skills-from-patterns/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-analytics",
+      "section": "Analytics & Tracking",
+      "summary": "Add PostHog event tracking, page views, feature flags, and session replay to any web app.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-analytics/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-feature-flags",
+      "section": "Analytics & Tracking",
+      "summary": "Add feature flags for gradual rollouts and A/B testing using PostHog or a simple local implementation.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-feature-flags/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "posthog-llm-analytics",
+      "section": "Analytics & Tracking",
+      "summary": "Instrument LLM calls with token usage, latency, cost tracking, and model comparison.",
+      "url": "https://github.com/PostHog/skills/tree/main/skills/posthog/llm-analytics",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "posthog-migrations",
+      "section": "Analytics & Tracking",
+      "summary": "Migrate from other analytics providers (Amplitude, Mixpanel, GA) to PostHog.",
+      "url": "https://github.com/PostHog/skills/tree/main/skills/posthog/migrations",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-error-tracking",
+      "section": "Error Tracking & Monitoring",
+      "summary": "Add Sentry crash reporting, performance monitoring, and source maps.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-error-tracking/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-auth",
+      "section": "Authentication & Payments",
+      "summary": "Add OAuth login, session management, and protected routes with Auth.js (NextAuth).",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-auth/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-stripe",
+      "section": "Authentication & Payments",
+      "summary": "Integrate Stripe checkout, subscriptions, webhooks, and customer portal.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-stripe/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "authsome",
+      "section": "Authentication & Payments",
+      "summary": "Local credential broker for AI agents. Log in once via OAuth2 or API key, encrypted vault stores credentials, local proxy injects them at request time so Cursor's agent never sees raw secrets. 45 providers bundled including GitHub, Google, OpenAI, Linear, Slack, Notion, Resend, Stripe.",
+      "url": "https://github.com/agentrhq/authsome",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-e2e-tests",
+      "section": "Testing",
+      "summary": "Set up Playwright with config, example tests, page objects, and CI integration.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-e2e-tests/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "writing-tests",
+      "section": "Testing",
+      "summary": "Analyze existing code and write comprehensive unit and integration tests with proper mocking, edge cases, and assertions.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/writing-tests/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "python-tdd-with-uv",
+      "section": "Testing",
+      "summary": "Test-driven development in Python using uv \u2014 red-green-refactor cycle with vertical slicing and fast dependency management.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/python-tdd-with-uv/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "mattpocock-tdd",
+      "section": "Testing",
+      "summary": "Vertical-slice TDD for AI agents \u2014 one test, one implementation, repeat. Prevents over-engineering and speculative tests.",
+      "url": "https://github.com/mattpocock/skills/tree/main/tdd",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-webapp-testing",
+      "section": "Testing",
+      "summary": "Automated browser testing for web apps with screenshot verification and interaction flows.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "api-smoke-testing",
+      "section": "Testing",
+      "summary": "Discover API routes from the codebase, hit every endpoint, and report which ones return errors.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/api-smoke-testing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "babysitting-pr",
+      "section": "Workflow",
+      "summary": "Monitor an open PR for CI failures, review comments, and merge conflicts \u2014 then fix them automatically to keep the PR merge-ready.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/babysitting-pr/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "creating-pr",
+      "section": "Workflow",
+      "summary": "Create clean, review-ready pull requests with conventional titles, structured descriptions, and linked issues.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/creating-pr/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "writing-commit-messages",
+      "section": "Workflow",
+      "summary": "Write conventional commit messages with type prefixes, scopes, and meaningful descriptions.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/writing-commit-messages/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "incident-response",
+      "section": "Workflow",
+      "summary": "Handle production incidents \u2014 triage severity, mitigate, communicate status, and write blameless postmortems.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/incident-response/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "systematic-debugging",
+      "section": "Workflow",
+      "summary": "Structured debugging methodology \u2014 reproduce, isolate, hypothesize, and verify using git bisect, binary search, and logging.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/systematic-debugging/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "chatcrystal",
+      "section": "Workflow",
+      "summary": "Local-first memory recall and writeback skills for AI coding sessions via ChatCrystal Core and MCP.",
+      "url": "https://github.com/ZengLiangYi/ChatCrystal/tree/main/skills",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-docker",
+      "section": "Infrastructure & DevOps",
+      "summary": "Dockerize any app with a multi-stage Dockerfile, docker-compose, and .dockerignore.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-docker/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "setting-up-ci",
+      "section": "Infrastructure & DevOps",
+      "summary": "Set up a GitHub Actions CI/CD pipeline with linting, testing, type-checking, and deployment.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/setting-up-ci/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "setting-up-terraform",
+      "section": "Infrastructure & DevOps",
+      "summary": "Infrastructure-as-code with provider config, modules, remote state, and CI integration.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/setting-up-terraform/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "antonbabenko-terraform",
+      "section": "Infrastructure & DevOps",
+      "summary": "Terraform and OpenTofu skill \u2014 testing, modules, CI/CD, and production patterns.",
+      "url": "https://github.com/antonbabenko/terraform-skill",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "kubernetes-deploying",
+      "section": "Infrastructure & DevOps",
+      "summary": "Deploy to Kubernetes \u2014 Deployments, Services, Ingress, ConfigMaps, health checks, and autoscaling.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/kubernetes-deploying/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "reviewing-code",
+      "section": "Code Quality & Security",
+      "summary": "Thorough code review focused on correctness, maintainability, performance, and best practices.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/reviewing-code/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "auditing-security",
+      "section": "Code Quality & Security",
+      "summary": "Systematic security audit checking for OWASP Top 10 vulnerabilities, secrets exposure, and insecure patterns.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/auditing-security/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "auditing-performance",
+      "section": "Code Quality & Security",
+      "summary": "Audit bundle size, rendering, database queries, and Core Web Vitals.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/auditing-performance/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "sentry-code-simplifier",
+      "section": "Code Quality & Security",
+      "summary": "Refactor for clarity, consistency, and maintainability \u2014 eliminates dead code, fixes naming, and reduces complexity.",
+      "url": "https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/code-simplifier",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "sentry-find-bugs",
+      "section": "Code Quality & Security",
+      "summary": "Scan local branch changes for bugs, security vulnerabilities, and code quality issues.",
+      "url": "https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/find-bugs",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "sentry-code-review",
+      "section": "Code Quality & Security",
+      "summary": "Code review following Sentry's engineering practices.",
+      "url": "https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/code-review",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "sentry-security-review",
+      "section": "Code Quality & Security",
+      "summary": "Security code review for injection, XSS, auth bypass, and IDOR vulnerabilities.",
+      "url": "https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/security-review",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "sentry-django-perf-review",
+      "section": "Code Quality & Security",
+      "summary": "Django-specific performance review \u2014 N+1 queries, select_related, caching, and serialization.",
+      "url": "https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/django-perf-review",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "sentry-skill-scanner",
+      "section": "Code Quality & Security",
+      "summary": "Scan agent skills for security issues \u2014 prompt injection, exfiltration, and unsafe tool use.",
+      "url": "https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/skill-scanner",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "verifying-markdown-formatting",
+      "section": "Code Quality & Security",
+      "summary": "Verify headings, lists, links, code blocks, spacing, and style consistency in Markdown files.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/verifying-markdown-formatting/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "fixing-broken-links",
+      "section": "Code Quality & Security",
+      "summary": "Crawl all URLs in a file, test each for HTTP 200, and fix or replace any broken links.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/fixing-broken-links/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "HOL Guard",
+      "section": "Code Quality & Security",
+      "summary": "Security harness that intercepts tool calls in AI coding agents before files change or network is contacted.",
+      "url": "https://github.com/hashgraph-online/hol-guard",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "penthera",
+      "section": "Code Quality & Security",
+      "summary": "Security scanner for web apps covering TLS, headers, auth hardening, secret scanning, IDOR/OAuth, and injection probes, with OWASP-mapped findings and SARIF output. Runs as a Cursor skill or CLI for authorized testing only.",
+      "url": "https://github.com/danoszz/penthera/tree/main/skills/penthera",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "updating-npm-package",
+      "section": "Dependencies",
+      "summary": "Safely update an npm package: check npmjs.com for the latest version, read release notes, auto-apply minor updates, and for major updates find the migration guide and produce a detailed validation report.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/updating-npm-package/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "dependabot-triage",
+      "section": "Dependencies",
+      "summary": "Defensive Dependabot triage for JS/TS repos (npm, pnpm, yarn, bun) \u2014 picks the *minimal* patched version that supersets every CVE in the cluster, maps every import site into Public/API \u00b7 Client-Bundle \u00b7 Internal/Dev exposure buckets, enforces npm\u2194pnpm lockfile parity before opening the PR, and scrapes the changelog for `BREAKING` / `DEPRECATED` / `MIGRATION` keywords with a safety interlock. Standard and Fast-Track modes. Cross-agent (Cursor, Claude Code, Codex CLI).",
+      "url": "https://github.com/akshayrao14/git-practices/tree/main/skills/dependabot-triage",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "using-ui-stack",
+      "section": "Frontend & UI",
+      "summary": "Enforce a design system (8px grid, color tokens, typography, dark mode, 5-state interactions) on every AI-generated component.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/using-ui-stack/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "converting-css-to-tailwind",
+      "section": "Frontend & UI",
+      "summary": "Convert plain CSS stylesheets to Tailwind utility classes \u2014 selectors, media queries, pseudo-classes, animations, and arbitrary values.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/converting-css-to-tailwind/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "converting-css-modules-to-tailwind",
+      "section": "Frontend & UI",
+      "summary": "Migrate CSS Modules to Tailwind \u2014 handles `styles.xxx` removal, `composes`, conditional classNames, SCSS features, and cleanup.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/converting-css-modules-to-tailwind/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-frontend-design",
+      "section": "Frontend & UI",
+      "summary": "Generate polished, production-ready frontend UI with consistent styling and responsive layouts.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shadcn-ui",
+      "section": "Frontend & UI",
+      "summary": "Managing shadcn components \u2014 adding, searching, debugging, styling, and composing UI.",
+      "url": "https://ui.shadcn.com/docs/skills",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "vercel-react-best-practices",
+      "section": "Frontend & UI",
+      "summary": "40+ rules for React/Next.js performance including eliminating request waterfalls and bundle optimization.",
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "vercel-web-design-guidelines",
+      "section": "Frontend & UI",
+      "summary": "UI code auditing for accessibility, UX, and performance compliance.",
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "vercel-react-view-transitions",
+      "section": "Frontend & UI",
+      "summary": "Implement the View Transitions API in React/Next.js for smooth page and component animations.",
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-view-transitions",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "vercel-composition-patterns",
+      "section": "Frontend & UI",
+      "summary": "Component composition, code splitting, and server/client boundary patterns for Next.js.",
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "react-native-patterns",
+      "section": "Frontend & UI",
+      "summary": "Build mobile apps with React Native and Expo \u2014 navigation, platform-specific code, performance, and native modules.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/react-native-patterns/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "mattpocock-prd-to-issues",
+      "section": "Planning & Architecture",
+      "summary": "Convert a product requirements doc into a set of well-scoped GitHub issues.",
+      "url": "https://github.com/mattpocock/skills/tree/main/prd-to-issues",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "mattpocock-improve-architecture",
+      "section": "Planning & Architecture",
+      "summary": "Analyze a codebase and propose concrete architecture improvements.",
+      "url": "https://github.com/mattpocock/skills/tree/main/improve-codebase-architecture",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "mattpocock-grill-me",
+      "section": "Planning & Architecture",
+      "summary": "Challenge assumptions and push back on ideas before committing to an approach.",
+      "url": "https://github.com/mattpocock/skills/tree/main/grill-me",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-mcp-builder",
+      "section": "Planning & Architecture",
+      "summary": "Build Model Context Protocol servers from scratch with tool definitions and transport setup.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "architecture-decision-records",
+      "section": "Planning & Architecture",
+      "summary": "Document technical decisions as ADRs with context, options considered, and rationale.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/architecture-decision-records/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "database-design",
+      "section": "Planning & Architecture",
+      "summary": "Design database schemas \u2014 tables, relationships, indexes, constraints, and ORM setup.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/database-design/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "@hanv89/azure-arch-skill",
+      "section": "Planning & Architecture",
+      "summary": "Draw Microsoft Azure and Microsoft Fabric architecture diagrams in PlantUML with `<img:URL>` references to 840 first-party-MIT icons; per-vendor `INDEX.md` lets the agent grep by name/tag instead of guessing filenames. Install: `npx @hanv89/azure-arch-skill@latest install --agent=cursor` (per-project install into `<cwd>/.cursor/rules/`).",
+      "url": "https://github.com/hanv89/azure-icons-for-architecture-diagrams",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "adding-api-docs",
+      "section": "Documentation",
+      "summary": "Generate OpenAPI/Swagger documentation with interactive docs UI.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/adding-api-docs/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-doc-coauthoring",
+      "section": "Documentation",
+      "summary": "Structured workflow for co-authoring technical documentation with an AI agent.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-docx",
+      "section": "Documentation",
+      "summary": "Generate Word documents (DOCX) programmatically with formatting, tables, and images.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/docx",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-pdf",
+      "section": "Documentation",
+      "summary": "Generate PDF documents with layouts, charts, and structured content.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-pptx",
+      "section": "Documentation",
+      "summary": "Create PowerPoint presentations with slides, layouts, and visual content.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "anthropic-xlsx",
+      "section": "Documentation",
+      "summary": "Build Excel spreadsheets with formulas, charts, and data formatting.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "exporting-to-png",
+      "section": "Utilities",
+      "summary": "Export code snippets, diagrams, terminal output, or UI components to PNG images via headless browser or CLI tools.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/exporting-to-png/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "generating-images",
+      "section": "Utilities",
+      "summary": "Generate or edit images (icons, logos, blog heroes, OG images, illustrations, mockups) using OpenAI `gpt-image-2`. Supports text-to-image, image-to-image, masked inpainting, and parallel batch jobs.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/generating-images/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "prompt-engineering",
+      "section": "Utilities",
+      "summary": "Write effective LLM prompts \u2014 system prompts, few-shot examples, chain-of-thought, and structured output.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/prompt-engineering/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "seo-auditing",
+      "section": "Utilities",
+      "summary": "Audit technical SEO \u2014 meta tags, structured data, Open Graph, sitemaps, and Core Web Vitals.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/seo-auditing/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "seo-analysis",
+      "section": "Utilities",
+      "summary": "Full SEO audit using Search Console, URL inspection, PageSpeed, technical crawling, metadata checks, schema review, and a prioritized 30-day action plan.",
+      "url": "https://github.com/nowork-studio/toprank/blob/main/seo/seo-analysis/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "writing-copy",
+      "section": "Utilities",
+      "summary": "Write marketing copy for landing pages, CTAs, emails, microcopy, and product descriptions.",
+      "url": "https://github.com/spencerpauly/awesome-cursor-skills/blob/main/resources/writing-copy/SKILL.md",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "concise",
+      "section": "Utilities",
+      "summary": "Chinese-first concise mode skill. Compresses Cursor agent replies on two layers (expression + content) with auto-relax for safety, multi-step, and parameter-heavy cases. Works across Cursor, Claude Code, and Codex CLI.",
+      "url": "https://github.com/Cpp1022/concise",
+      "list": "https://github.com/spencerpauly/awesome-cursor-skills",
+      "license": "CC0-1.0"
+    }
+  ]
+}

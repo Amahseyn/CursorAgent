@@ -1,0 +1,29 @@
+{
+  "name": "cursoragent-rules",
+  "owner": {
+    "name": "Amahseyn"
+  },
+  "metadata": {
+    "description": "Cursor rules written by Cursor users, for other Cursor users to install."
+  },
+  "plugins": [
+    {
+      "name": "example-rule-pack",
+      "source": "plugins/example-rule-pack",
+      "description": "Example Cursor rules that show how a shared pack is structured. Add your own pack beside this one.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": ["example", "cursor-rules"],
+      "category": "rules"
+    },
+    {
+      "name": "any-repo-roles",
+      "source": "plugins/any-repo-roles",
+      "description": "Review any repository as senior security, product design, and every other software role, in the language that repository already uses.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": ["review", "security", "design", "any-language", "roles"],
+      "category": "rules"
+    }
+  ]
+}

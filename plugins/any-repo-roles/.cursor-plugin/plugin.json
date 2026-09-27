@@ -1,0 +1,11 @@
+{
+  "name": "any-repo-roles",
+  "version": "0.1.0",
+  "description": "Review any repository as senior security, product design, and every other software role, in the language that repository already uses.",
+  "author": {
+    "name": "Amahseyn"
+  },
+  "license": "MIT",
+  "keywords": ["review", "security", "design", "any-language", "roles"],
+  "repository": "https://github.com/Amahseyn/CursorAgent"
+}

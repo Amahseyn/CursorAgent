@@ -1,0 +1,11 @@
+{
+  "name": "your-plugin-name",
+  "version": "0.1.0",
+  "description": "One sentence: who this pack helps and what it changes.",
+  "author": {
+    "name": "Your Name"
+  },
+  "license": "MIT",
+  "keywords": ["cursor-rules"],
+  "repository": "https://github.com/Amahseyn/CursorAgent"
+}
